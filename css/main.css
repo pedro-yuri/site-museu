@@ -1,0 +1,357 @@
+/********************************************************************************
+    FORMATAÇÕES-PADRÕES
+*********************************************************************************/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 67.5rem;
+    min-width: 58rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: #F4F2EC url(../img/fundo.png) repeat-x top left;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+/********************************************************************************
+    MARCANDO-PÁGINA
+*********************************************************************************/
+#container header .home a,
+#container header .sobre a,
+#container header .exposicoes a,
+#container header .fotos a,
+#container header .contato a{
+    color: #FFF;
+    border-bottom: 1px solid #FFF;
+}
+
+/********************************************************************************
+    HEADER
+*********************************************************************************/
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 158px;
+}
+
+nav li{
+    float: left;
+}
+
+header nav li a{
+    padding: 0.8rem;
+}
+
+header nav li a:active, a:visited, a:link{
+    color: #996f23;
+}
+
+header nav li{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+header nav li a:hover{
+    color: #FFF;
+    border-bottom: 1px solid #FFF;
+}
+
+img{
+    width: 100%;
+}
+
+/********************************************************************************
+    CONTEUDO-PRINCIPAL
+*********************************************************************************/
+#main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.area-conteudo-1, .area-sobre, .area-exposicoes, .area-fotos, .area-contato{
+    display: flex;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    flex-basis: 710px;
+    justify-content: space-between;
+    margin: 15px 30px 0 0;
+}
+
+/********************************************************************************
+    AREA-CONTEUDO-1
+*********************************************************************************/
+
+section.area-conteudo-1 h2{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: green;
+}
+
+section.area-conteudo-1 h2:hover{
+    color: #996f23;
+}
+
+section.area-conteudo-1 ul{
+    list-style-type: disc;
+    padding: 0 1.75rem;
+}
+
+section.area-conteudo-1 a{
+    color: #996f23;
+    margin: 0.45rem 0;
+    font-weight: 500;
+}
+
+section.area-conteudo-1 a:hover{
+    color: green;
+    text-decoration: underline;
+}
+
+section.area-conteudo-1 article{
+    display: flex;
+    flex-direction: column;
+}
+
+section.area-conteudo-1 .conteudo-1-2{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+section.area-conteudo-1 .conteudo-1-2 article{
+    display: flex;
+    flex-grow: 1;
+    width: 250px;
+}
+
+section.area-conteudo-1 .conteudo-1-2 iframe{
+    height: 300px;
+    padding: 1rem;
+}
+
+
+/********************************************************************************
+    AREA-CONTEUDO-2
+*********************************************************************************/
+
+aside.area-conteudo-2{
+    background-color: #F1F1F1F1;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-basis: 340px;
+    margin-top: 15px;
+}
+
+aside.area-conteudo-2 .conteudo-2-2{
+    padding: 1rem;
+    margin-top: 1.25rem;
+    background-color: #CDC8B1;
+}
+
+aside.area-conteudo-2 h2{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #86521a;
+}
+
+aside.area-conteudo-2 form{
+    display: flex;
+}
+
+aside.area-conteudo-2 form fieldset{
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin: 0.5rem 0 0.2rem 0;
+}
+
+aside.area-conteudo-2 .conteudo-2-2 label{
+    margin: 0 0.15rem;
+}
+
+aside.area-conteudo-2 .conteudo-2-2 form article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0.5rem 0;
+}
+
+aside.area-conteudo-2 .conteudo-2-2 form input:not(.pessoas){
+    width: 5rem;
+}
+
+aside.area-conteudo-2 .conteudo-2-2 form .pessoas{
+    width: 2.5rem;
+}
+
+aside.area-conteudo-2 .conteudo-2-2 form input{
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+aside.area-conteudo-2 .conteudo-2-2 .submit input{
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: #996f23;
+    color: #FFF;
+    text-transform: uppercase;
+    border: 1px solid #996f23;
+    cursor: pointer;
+}
+
+aside.area-conteudo-2 .conteudo-2-2 .submit input:hover{
+    border: 1px solid #996f23;
+    background-color: #FFF;
+    color: #996f23;
+}
+
+aside.area-conteudo-2 .conteudo-2-3{
+    padding: 10px;
+}
+
+aside.area-conteudo-2 .conteudo-2-3 article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1.2rem 0;
+}
+
+aside.area-conteudo-2 .conteudo-2-3 article article{
+    background: url(../img/fundo-foto.png) no-repeat center;
+    padding: 20px 16.6px 20px 16.5px;
+}
+
+/********************************************************************************
+    SOBRE
+*********************************************************************************/
+
+.img-museu{
+    display: flex;
+    flex-grow: 1;
+    height: 320px;
+}
+
+.tabela{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.area-sobre h2{
+    padding: 1rem 0;
+    color: green;
+}
+
+.area-sobre p{
+    font-weight: 500;
+    text-indent: 3rem;
+    text-align: justify;
+}
+
+.area-sobre table,td,th{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.area-sobre td,th{
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/********************************************************************************
+    EXPOSIÇÕES
+*********************************************************************************/
+
+.area-exposicoes article{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.area-exposicoes h2{
+    color: green;
+    padding: 1rem;
+}
+
+.area-exposicoes p{
+    padding-bottom: 1.5rem;
+    font-weight: 500;
+    text-indent: 3rem;
+    text-align: justify;
+}
+
+/********************************************************************************
+    FOTOS
+*********************************************************************************/
+
+.area-fotos article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 645px;
+}
+
+.area-fotos img{
+    display: flex;
+    flex: 1 1 300px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #CCC;
+    background-color: #F2F2F2;
+}
+
+/********************************************************************************
+    RODAPE
+*********************************************************************************/
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0;
+    font-weight: 500;
+}
+
+.rodape nav{
+    background: url(../img/fundo-rodape.png) repeat-x top left;
+    padding-top: 1rem;
+}
+
+.rodape a{
+    padding: 0.5rem;
+    margin: 0 0.3rem;
+}
+
+.rodape a:hover{
+    text-decoration: underline;
+    color: green;
+}
+
+.rodape span span{
+    color: #996f23;
+}
